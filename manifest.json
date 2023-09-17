@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Timer Extension",
+    "version": "1.0.0",
+    "description": "A timer extention project - to help me learn how to make chrome extentions.",
+    "icons":{
+        "16": "timerIcon.png",
+        "48": "timerIcon.png",
+        "128": "timerIcon.png"
+    },
+    "action":{
+        "default_icon":{
+            "16": "timerIcon.png",
+            "24": "timerIcon.png",
+            "32": "timerIcon.png"    
+        },
+        "default_title": "Timer Extension Action Title",
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "permissions": ["storage", "alarms", "notifications"],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
